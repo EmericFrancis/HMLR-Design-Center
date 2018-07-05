@@ -1,0 +1,59 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Center
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Center</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Paper Prototyping</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row"></th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <h2>Why we should paper prototype?</h2>
+            <p class="govuk-body">Paper prototyping allows us to quickly share and communicate ideas with other team members and designers.
+              it also allows us to quickly iterate upon basic ideas before even needing to touch a computer.</p>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <h2>Tools</h2>
+            <p class="govuk-body">All you really need is a pen and some paper to start paper prototyping your service
+            you can use <a href="#">GOV.UK Headed Paper</a> to save time and give your sketches a more offical edge.</p>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <h2>Examples</h2>
+            <img src="/public/images/paper-prototyping/pp2.jpg" width="150" hieght="150">
+            <img src="/public/images/paper-prototyping/pp3.jpg" width="150" hieght="150">
+            <img src="/public/images/paper-prototyping/pp4.jpg" width="150" hieght="150">
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <img src="/public/images/paper-prototyping/pp1.jpeg" width="463" hieght="500">
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
