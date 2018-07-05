@@ -1,22 +1,18 @@
-.clear {
-  clear: both;
+//hero banner
+.hero {
+  background-color: #005ea5;
+  margin-top: -10px;
 }
 
-.small-viewports-only {
-  @include media(tablet) {
-    display: none;
-  }
+.hero h1 {
+  color: white;
 }
 
-.large-viewports-only {
-  @include media(mobile) {
-    display: none;
-  }
+.hero p {
+  color: white;
 }
 
-.js-only {
-  body:not(.js-enabled) & {
-    display: none;
-  }
+.hero-grid {
+  padding-left: -15px;
+  margin-left: -15px;
 }
-

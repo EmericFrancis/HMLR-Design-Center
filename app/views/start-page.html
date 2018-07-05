@@ -1,43 +1,49 @@
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
   Design Center
 {% endblock %}
 
-{% block content %}
-
-  <div class="hero">
-    <div class="govuk-grid-row">
-      <div class ="govuk-grid-column-two-thirds">
-        <h1 class="hero-header">HMLR Design Center</h1>
-      </div>
-    </div>
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-         <p class="hero-text">Providing digital and service leadership, training and advice to portfolios and delivery teams
-        across Home Office Digital, Data and Technology.</p>
-      </div>
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Center</h1>
+  </div>
+</header>
+<div class="hero">
+  <div class="govuk-grid-row govuk-header__container govuk-width-container">
+    <div class="govuk-grid-column-two-thirds">
+      <h1>HMLR Design Center</h1>
     </div>
   </div>
+  <div class="govuk-grid-row govuk-header__container govuk-width-container">
+    <div class="govuk-grid-column-two-thirds">
+      <p> lots of random text and a extremly inspiratational message in here!!</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
-      <a class="large-link" href="#">Making</a>
+      <a class="govuk-!-font-size-24" href="making.html">Making</a>
       <p>A useful mix of information on prototyping skills and service creation</p>
     </div>
     <div class="govuk-grid-column-one-half">
-      <a class="large-link" href="#">Learning</a>
+      <a class="govuk-!-font-size-24" href="#">Learning</a>
       <p>A collection of books, blogs and training to help you develop your skills</p>
     </div>
   </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
-      <a class="large-link" href="#">Helping</a>
+      <a class="govuk-!-font-size-24" href="#">Helping</a>
       <p>
     </div>
     <div class="govuk-grid-column-one-half">
-      <a class="large-link" href="#">Sharing</a>
+      <a class="govuk-!-font-size-24" href="#">Sharing</a>
     </div>
   </div>
 {% endblock %}
