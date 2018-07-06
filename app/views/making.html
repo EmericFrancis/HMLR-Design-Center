@@ -1,17 +1,33 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  Design Center
+  Design Centre
 {% endblock %}
 
 {% block header %}
 <header class="govuk-header " role="banner" data-module="header">
   <div class="govuk-header__container govuk-width-container">
-    <h1>design Center</h1>
+    <h1>Design Centre</h1>
   </div>
 </header>
 {% endblock %}
 
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page.html"
+    },
+    {
+      text: "Making",
+      href: "making.html"
+    }
+  ]
+}) }}
+{% endblock %}
 
 {% block content %}
 
@@ -28,7 +44,14 @@
           </th>
         </tr>
         <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="row">Total estimated pay</th>
+          <th class="govuk-table__header" scope="row">
+            <a href="sketch.html">Sketch</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="google-slides.html">Google Slides</a>
+          </th>
         </tr>
       </tbody>
     </table>
