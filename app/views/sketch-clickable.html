@@ -1,0 +1,94 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page.html"
+    },
+    {
+      text: "Making",
+      href: "making.html"
+    },
+    {
+      text: "Axure",
+      href: "axure.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header" role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Sketch Clickable Prototypes</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">To create sharable interactive prototypes in sketch you will need to install a plugin.
+    </p>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class= "govuk-heading-m">What you need?</h2>
+    <ul class="govuk-list govuk-list--number">
+      <li><a href="https://www.sketchapp.com/" target="_blank">Sketch</a></li>
+      <li><a href="https://github.com/abbott567/sketch_wireframing_kit" target="_blank">GOV Elemetnts Kit</a></li>
+      <li><a href="https://www.invisionapp.com/craft" target="_blank">Craft Plugin for sketch</a></li>
+      <li><a href="https://projects.invisionapp.com/d/signup" target="_blank">An Invison account</a></li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class= "govuk-heading-m">Using Gov Elements in sketch</h2>
+
+    <h3 class="govuk-heading-s">Adding the Gov Elements</h3>
+    <ul class="govuk-list govuk-list--number">
+      <li>Select Sketch in the menu bar</li>
+      <li>open the prefences menu</li>
+      <li>seltct the libraies tab</li>
+      <li>click add libray</li>
+      <li>navigate to gov elements file you downloaded</li>
+      <li>open the file to add it to your sketch libray</li>
+
+    </ul>
+
+    <h3 class="govuk-heading-s"> Creating Artboards</h3>
+    <ul class="govuk-list govuk-list--number">
+      <li>press the insert icon in the top left corner</li>
+      <li>selct artboard</li>
+      <li>create a custom artboard size of 1020px x 861px</li>
+      <li>save the custom artboard size</li>
+    </ul>
+
+    <!-- <img src="public/images/axshare.gif" width="630" height="354.4"> -->
+
+    <h3 class="govuk-heading-s">Adding Elements</h3>
+    <ul class="govuk-list govuk-list--number">
+      <li>press the insert icon in the top left corner</li>
+      <li>go to documents in the symbols section</li>
+      <li>find and select the element you want</li>
+      <li>drag it to the correct postion</li>
+      <li>right click the element and detach it from the symbol</li>
+    </ul>
+
+  </div>
+</div>
+
+
+{% endblock %}
