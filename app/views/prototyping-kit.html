@@ -1,0 +1,73 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page.html"
+    },
+    {
+      text: "Making",
+      href: "making.html"
+    },
+    {
+      text: "Gov Prototyping Kit",
+      href: "prototyping-kit.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Gov Prototyping Kit</h1>
+
+<h2 class= "govuk-heading-m">What you need?</h2>
+<ul class="govuk-list govuk-list--number">
+  <li><a href="https://govuk-prototype-kit.herokuapp.com/docs/install" target="_blank">download</a> and install the kit</li>
+  <li>set up a <a href="https://github.com/" target="_blank">GitHub</a>account</li>
+  <li>set up a <a href="https://www.heroku.com" target="_blank">heroku</a> account</li>
+</ul>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-s">Setting up GitHub</h3>
+      <ul class="govuk-list govuk-list--number">
+      <li>create an account using your LR email</li>
+      <li>set up <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">SSH</a></li>
+      <li>get added to the Land Registry Organsation</li>
+      <li>get added to the designers team</li>
+    </ul>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-s">Using the kit</h3>
+
+<p class="govuk-body">there are some <a href="https://govuk-prototype-kit.herokuapp.com/docs/tutorials-and-examples">tutorials</a>
+  and help guides that can be used to learn the kit. You should use the <a href="https://design-system.service.gov.uk/get-started/">GDS design
+  system</a> to source code for elements and patterns when you are coding prototypes in the Kit.
+</p>
+
+
+
+{% endblock %}

@@ -18,3 +18,23 @@
   padding-left: -15px;
   margin-left: -15px;
 }
+
+.sticker {
+    color: white;
+    font-weight: 800;
+    border: 2px solid #b22a69;
+    background: linear-gradient(#b22a69, #D53880);
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin-right: 0.5em;
+    border-radius: 5px;
+}
+
+.sticker-title{
+  float: left;
+  margin: 0;
+}
+
+.table-title {
+  background-color: #f8f8f8;
+  text-align: center;
+}

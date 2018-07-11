@@ -1,0 +1,78 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page.html"
+    },
+    {
+      text: "Making",
+      href: "making.html"
+    },
+    {
+      text: "Screenshot",
+      href: "Screenshotting.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Screenshot Tools</h1>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<div>
+<span class="sticker">Automation Tool</span>
+<h3 class= "govuk-heading-m sticker-title govuk-!-margin-right-2">Wshot</h3>
+</div>
+<p class=""><a href="https://github.com/joelanman/wshot/blob/master/README.md">Download</a></p>
+<p class="govuk-body">Setup following the instructions on the GitHub repo README.</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">Awesome Screenshot</h3>
+<p class="govuk-body"><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj"
+  >Add to Chrome</a></p>
+
+<p class="govuk-body">Awesome Screenshot is a google chrome extension for taking screenshots however you can also store groups of screenshots
+  on thier <a href="https://www.awesomescreenshot.com/">website</a> as a project. However it is recomended that if you are working on a project you store your files in a
+  central agreed location for that project.
+</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">Full Page Screen Capture</h3>
+<p class="govuk-body"><a href="https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl"
+  >Add to Chrome</a></p>
+
+<p class="govuk-body">Full page screen capture is a very useful google chrome extension as it doesnt only capture whats currently in
+  view on the browser window. It will capture the entire screen useful for a service with long pages such as data entry screens.
+</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">Nimbus Screenshot</h3>
+<p class="govuk-body"><a href="https://chrome.google.com/webstore/detail/nimbus-screenshot-app/aecjogkncpbkjfobfnoaiepipllcadhe?hl=en"
+  >Add to Chrome</a></p>
+
+<p class="govuk-body">Nimbus Screenshot is a google chrome extension for taking screenshots</p>
+
+{% endblock %}
