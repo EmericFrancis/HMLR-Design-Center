@@ -1,0 +1,69 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page.html"
+    },
+    {
+      text: "Making",
+      href: "making.html"
+    },
+    {
+      text: "Code Editors",
+      href: "code-editors.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Code Editors</h1>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">Atom</h3>
+<p class="govuk-body"><a href="https://atom.io/">Download</a></p>
+
+<p class="govuk-body">Atom is a text editor that's modern, approachable,
+  yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
+</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">SublimeText</h3>
+<p class="govuk-body"><a href="https://www.sublimetext.com/">Download</a></p>
+
+<p class="govuk-body">Sublime Text is a sophisticated text editor for code, markup and prose.
+   You’ll love the slick user interface, extraordinary features and amazing performance.
+</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">TextWrangler</h3>
+<p class="govuk-body"><a href="https://itunes.apple.com/gb/app/textwrangler/id404010395?mt=12">Download</a></p>
+
+<p class="govuk-body">
+TextWrangler's best-of-class features include "grep" (regular-expression) pattern matching,
+search and replace across multiple files, function navigation and syntax coloring for numerous source code languages,
+code folding, FTP and SFTP open and save, AppleScript, Mac OS X Unix scripting support, and much more.</p>
+
+{% endblock %}
