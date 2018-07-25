@@ -1,0 +1,134 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page.html"
+    },
+    {
+      text: "Learning",
+      href: "learning.html"
+    },
+    {
+      text: "Reading List",
+      href: "reading-list.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Reading List</h1>
+
+<!-- <ul class="govuk-list govuk-list--bullet">
+  <li>Designing Design</li>
+  <li>The Design of Everyday Things</li>
+  <li>Don’t Make Me Think</li>
+  <li>The Back of the Napkin</li>
+  <li>The Elements of User Experience</li>
+  <li>Understanding Comics: The Invisible Art</li>
+  <li>Forms that work: Designing web forms for usability</li>
+  <li>Universal Principles of Design, Revised and Updated</li>
+  <li>Designing Web Usability: The Practice of Simplicity</li>
+  <li>Prioritising Web Usability</li>
+  <li>100 Things Every Designer Needs to Know About People</li>
+  <li>Design Is A Job</li>
+  <li>Handbook of Usability Testing</li>
+  <li>User centred web design</li>
+  <li>The small big </li>
+  <li>Lean UX</li>
+</ul> -->
+
+<table class="govuk-table">
+ <thead class="govuk-table__head">
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="col">Book</th>
+     <th class="govuk-table__header" scope="col">Author</th>
+   </tr>
+ </thead>
+ <tbody class="govuk-table__body">
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Designing Design</th>
+     <td class="govuk-table__cell ">Kenya Hara</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">The Design of Everyday Things</th>
+     <td class="govuk-table__cell ">Don Norman</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Don’t Make Me Think</th>
+     <td class="govuk-table__cell ">Steve Krug</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">The Back of the Napkin</th>
+     <td class="govuk-table__cell ">Dan Roam</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">The Elements of User Experience</th>
+     <td class="govuk-table__cell ">Jesse James Garrett</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Understanding Comics: The Invisible Art</th>
+     <td class="govuk-table__cell ">Scott McCloud</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Forms that work: Designing web forms for usability</th>
+     <td class="govuk-table__cell ">Caroline Jarrett and Gerry Gaffney</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Universal Principles of Design, Revised and Updated</th>
+     <td class="govuk-table__cell ">William Lidwell, Kritina Holden, Jill Butler</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Designing Web Usability: The Practice of Simplicity</th>
+     <td class="govuk-table__cell ">Nielsen, J., & Langer, H.</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Prioritising Web Usability</th>
+     <td class="govuk-table__cell ">Caroline Jarrett and Gerry Gaffney</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">100 Things Every Designer Needs to Know About People</th>
+     <td class="govuk-table__cell ">Susan Weinschenk</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Design Is A Job</th>
+     <td class="govuk-table__cell ">Mike Monteiro</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Handbook of Usability Testing</th>
+     <td class="govuk-table__cell ">Rubin and Chisnell</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">User centred web design</th>
+     <td class="govuk-table__cell ">Martin Goldstein an Cialdini</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">The small big</th>
+     <td class="govuk-table__cell ">Nielsen, J</td>
+   </tr>
+   <tr class="govuk-table__row">
+     <th class="govuk-table__header" scope="row">Lean UX</th>
+     <td class="govuk-table__cell ">Gothelf/Seiden</td>
+   </tr>
+ </tbody>
+</table>
+{% endblock %}
