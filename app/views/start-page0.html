@@ -1,0 +1,65 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header header-border govuk-!-padding-bottom-1" role="banner" data-module="header">
+  <div class="govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+
+<div class="hero-container">
+  <div class="hero-text">
+  <h2 class="govuk-width-container govuk-heading-xl govuk-!-padding-bottom-3">HMLR Design Centre</h2>
+  <p class="govuk-body">Designing HM Land Registry services</p>
+  </div>
+  <div class="color-overlay"></div>
+</div>
+{% endblock %}
+
+<!-- {% block footer %}
+<footer class="footer-container">
+  <div class="govuk-width-container">
+    <p class="govuk-body-s footer-text govuk-!-padding-top-4">A community site made and maintained by the HM Land Registry design community</p>
+  </div>
+</footer>
+{% endblock %} -->
+
+{% block content %}
+<div class="govuk-grid-row govuk-!-padding-bottom-2">
+  <div class="govuk-grid-column-one-half govuk-!-padding-right-1 govuk-!-padding-left-0">
+    <a href="making.html">
+      <div class="button">
+        <p class="govuk-body">Making</p>
+      </div>
+    </a>
+  </div>
+  <div class="govuk-grid-column-one-half govuk-!-padding-left-1 govuk-!-padding-right-0">
+    <a href="learning.html">
+      <div class="button">
+        <p class="govuk-body">Learning</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half govuk-!-padding-right-1 govuk-!-padding-left-0">
+    <a href="helping.html">
+      <div class="button">
+        <p class="govuk-body">Helping</p>
+      </div>
+    </a>
+  </div>
+  <div class="govuk-grid-column-one-half govuk-!-padding-left-1 govuk-!-padding-right-0">
+    <a href="sharing.html">
+      <div class="button">
+        <p class="govuk-body">Sharing</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+{% endblock %}
