@@ -1,0 +1,156 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page0.html"
+    },
+    {
+      text: "Making",
+      href: "making.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Making</h1>
+
+<div class="govuk-grid-row govuk-!-padding-top-9">
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Wireframing</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="paper-prototyping.html">Paper Prototyping</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="sketch.html">Sketch</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="google-slides.html">Google Slides</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Prototyping</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="axure.html">Axure - Medium Fidelity</a>
+          </th>
+        </tr>
+        <!-- <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="sketch-clickable.html">Sketch - Medium Fidelity</a>
+          </th>
+        </tr> -->
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="prototyping-kit.html">Gov Prototyping Kit</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="code-editors.html">Code Editors</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Tools</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="screenshotting.html">Screenshotting</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="https://chrome.google.com/webstore/detail/page-editor/gjhhlkjfglilanfckcmnjdhpapdmiijk?hl=en" target="_blank">
+              In browser page editor</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="sketch-clickable.html">Useful Blogs</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Graphic Design</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="affinity-designer.html">Affinity Designer</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="illustrator.html">
+              Adobe Illustrator</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="https://color.adobe.com/create/color-wheel/" target="_blank">Color Pallets</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Mapping</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="user-mapping.html">User Journey</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="service-mapping.html">
+              Service Mapping</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

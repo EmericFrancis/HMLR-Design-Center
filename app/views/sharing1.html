@@ -1,0 +1,82 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design Centre
+{% endblock %}
+
+{% block beforeContent %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start-page0.html"
+    },
+    {
+      text: "Sharing",
+      href: "sharing.html"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header " role="banner" data-module="header">
+  <div class="govuk-header__container govuk-width-container">
+    <h1>Design Centre</h1>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Sharing</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Non Project Work</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a target="-_blank" href="https://drive.google.com/open?id=1U47uFLv2yEKYhhhLgweQi1OAIXLkh0YK">Mission Patches</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Fonts</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a href="https://drive.google.com/drive/folders/0B1ZlxWkPbjnsMERzbUpjU2JwRTA" target="_blank">GDS Transport</a>
+          </th>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a target="_blank" href="https://drive.google.com/drive/folders/0B1ZlxWkPbjnsNHBkTHBZaWY4b00">HMLR</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-!-font-size-24 govuk-!-padding-bottom-2">Logos</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">
+            <a target="_blank" href="https://drive.google.com/drive/folders/0B1ZlxWkPbjnsNHBkTHBZaWY4b00">HMLR</a>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
