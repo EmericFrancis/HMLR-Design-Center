@@ -97,32 +97,33 @@
   border-bottom: 0px;
 }
 
-//start page buttons (border)
+//start page panels (border)
 
 .front {
   z-index: 1;
 }
 
-.button {
+.panel {
   height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
   background-color: #bfc1c3;
-  cursor: pointer;
 }
 
-.button p {
-  margin: 0;
+.panel-text p {
+  color: white;
+  text-align: center;
 }
 
-.button-text{
+.panel-text{
   z-index: 1;
 }
 
-.button-text h3 {
+.panel-text h3 {
   color: white;
+  text-align: center;
 }
 
 //making section
@@ -132,9 +133,13 @@
     height: 400px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+
+.making a {
+  text-decoration: none;
 }
 
 .making-color {
@@ -152,9 +157,13 @@
     height: 400px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+
+.learning a {
+  text-decoration: none;
 }
 
 .learning-color {
@@ -172,9 +181,13 @@
     height: 400px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+
+.helping a {
+  text-decoration: none;
 }
 
 .helping-color {
@@ -192,9 +205,13 @@
     height: 400px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+
+.sharing a {
+  text-decoration: none;
 }
 
 .sharing-color {
